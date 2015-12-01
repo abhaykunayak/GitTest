@@ -2,6 +2,11 @@ x = 0:0.01:4*pi;
 y = 0.5*sin(x);
 
 fig = figure;
+
+ax_1 = axes();
+ax_1.Box = 'On';
+ax_1.LineWidth = 2;
+
 hold on;
 
 p = gobjects();
@@ -35,6 +40,5 @@ title_1.FontWeight = 'Bold';
 
 axis tight;
 
-set(gca, 'Box', 'On');
 legend(p(:), 'y = 0.5*sin(x)', 'y = 0.25*sin(x)^2',...
     'y = 0.5*x*sin(x)');
