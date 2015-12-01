@@ -1,5 +1,5 @@
 x = 0:0.01:4*pi;
-y = sin(x);
+y = 0.5*sin(x);
 
 fig = figure;
 hold on;
@@ -15,3 +15,7 @@ p2.LineWidth = 2;
 xlabel('x');
 ylabel('y');
 title('Sinusoidal Wave');
+axis tight;
+
+set(gca, 'Box', 'On');
+legend([p1 p2], 'y = 0.5*sin(x)', 'y = 0.25*sin(x)^2');
