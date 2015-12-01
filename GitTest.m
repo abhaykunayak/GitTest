@@ -8,6 +8,7 @@ fig = figure;
 ax_1 = axes();
 ax_1.Box = 'On';
 ax_1.LineWidth = 2;
+ax_1.Layer = 'top';
 
 hold on;
 
