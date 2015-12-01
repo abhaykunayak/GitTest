@@ -12,7 +12,7 @@ p2 = plot(x, y.^2);
 p2.LineStyle = '-';
 p2.LineWidth = 2;
 
-p3 = plot(x, x.*y);
+p3 = plot(x, sqrt(x).*y);
 p3.LineStyle = '-';
 p3.LineWidth = 2;
 
