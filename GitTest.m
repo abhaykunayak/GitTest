@@ -18,8 +18,16 @@ p(3) = plot(x, sqrt(x).*y);
 p(3).LineStyle = '-';
 p(3).LineWidth = 2;
 
-xlabel('x');
-ylabel('y');
+xlab_1 = xlabel('x');
+xlab_1.FontName = 'Times New Roman';
+xlab_1.FontSize = 12;
+xlab_1.FontWeight = 'Bold';
+
+ylab_1 = ylabel('y');
+ylab_1.FontName = 'Times New Roman';
+ylab_1.FontSize = 12;
+ylab_1.FontWeight = 'Bold';
+
 title('Sinusoidal Wave');
 axis tight;
 
