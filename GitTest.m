@@ -12,10 +12,15 @@ p2 = plot(x, y.^2);
 p2.LineStyle = '-';
 p2.LineWidth = 2;
 
+p3 = plot(x, x.*y);
+p3.LineStyle = '-';
+p3.LineWidth = 2;
+
 xlabel('x');
 ylabel('y');
 title('Sinusoidal Wave');
 axis tight;
 
 set(gca, 'Box', 'On');
-legend([p1 p2], 'y = 0.5*sin(x)', 'y = 0.25*sin(x)^2');
+legend([p1 p2 p3], 'y = 0.5*sin(x)', 'y = 0.25*sin(x)^2',...
+    'y = 0.5*x*sin(x)');
