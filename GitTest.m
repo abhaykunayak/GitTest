@@ -44,7 +44,7 @@ title_1.FontWeight = 'Bold';
 axis tight;
 
 leg_1 = legend(p(:), 'y = 0.5*sin(x)', 'y = 0.25*sin(x)^2',...
-    'y = 0.5*x*sin(x)');
+    'y = 0.5*sqrt(x)*sin(x)');
 leg_1.Location = 'Northwest';
 leg_1.FontName = 'Times New Roman';
 leg_1.FontSize = 10;
