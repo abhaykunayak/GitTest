@@ -28,7 +28,11 @@ ylab_1.FontName = 'Times New Roman';
 ylab_1.FontSize = 12;
 ylab_1.FontWeight = 'Bold';
 
-title('Sinusoidal Wave');
+title_1 = title('Sinusoidal Wave');
+title_1.FontName = 'Times New Roman';
+title_1.FontSize = 16;
+title_1.FontWeight = 'Bold';
+
 axis tight;
 
 set(gca, 'Box', 'On');
