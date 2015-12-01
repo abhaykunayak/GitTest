@@ -49,3 +49,7 @@ leg_1.Location = 'Northwest';
 leg_1.FontName = 'Times New Roman';
 leg_1.FontSize = 10;
 leg_1.FontWeight = 'Bold';
+
+% Save figure
+fig.PaperPositionMode = 'auto';
+print(fig, 'SinusoidalWave', '-djpeg', '-r300');
